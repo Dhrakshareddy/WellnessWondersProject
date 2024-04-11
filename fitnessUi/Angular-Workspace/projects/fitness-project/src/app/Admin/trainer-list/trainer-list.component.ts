@@ -35,6 +35,11 @@ export class TrainerListComponent implements OnInit {
 
     });
   }
+  getAll() {
+    this.trainerService.getTrainers().subscribe(trainer => {
+      this.trainers = this.trainers
+    })
+  }
 
   deleteTrainer(id: number): void {
 

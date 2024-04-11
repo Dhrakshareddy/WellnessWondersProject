@@ -1,34 +1,24 @@
 
-<body>
   <div class="container">
     <h1>List of Trainees</h1>
-    <table id="table" >
-        <thead>
-          <tr>
-          
-            <th class="th" style="width:150px">User Name</th>
-           
-            <th class="th" style="width:200px">Email</th>
-            <th class="th" style="width:150px">Contact Number</th>
-            
-            <th id="action" style="width:300px">Action</th>
-        </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let user of users">
-          
-            <td style="border: 1px solid black;">{{ user.name }}</td>
-            
-   
-            <td style="border: 1px solid black;">{{ user.email }}</td>
-            <td style="border: 1px solid black;">{{ user.contactNumber }}</td>
-          
-            <td><button (click)="goToClasses(user.name)">Classes</button>
-            <button (click)="goToAttendance(user.name)">Attendance</button></td>
-      
-          </tr>
-        </tbody>
-      </table>
+    <div class="trainee-list">
+      <div class="trainee-item" *ngFor="let user of users">
+        <div class="trainee-info">
+          <div class="info-label">User Name:</div>
+          <div class="info-value">{{ user.name }}</div>
+        </div>
+        <div class="trainee-info">
+          <div class="info-label">Email:</div>
+          <div class="info-value">{{ user.email }}</div>
+        </div>
+        <div class="trainee-info">
+          <div class="info-label">Contact Number:</div>
+          <div class="info-value">{{ user.contactNumber }}</div>
+        </div>
+        <div class="trainee-actions">
+          <button class="action-button" (click)="goToClasses(user.name)">Classes</button>
+          <button class="action-button" (click)="goToAttendance(user.name)">Attendance</button>
+        </div>
+      </div>
+    </div>
   </div>
-  </body>    
-       

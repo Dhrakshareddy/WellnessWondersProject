@@ -1,12 +1,11 @@
-
-<div id="con">
+<div class="con">
   <div class="container mt-2">
     <div class="row p-4 text-end ">
       <div class=" d-flex justify-content-end ">
         <h1>User List</h1>
        
       <div class="col-md-1  ">
-        <button id="add" class="btn btn-primary float-lg-end" routerLink="add">
+        <button class="add" routerLink="add">
          +
         </button>
 
@@ -36,12 +35,12 @@
          
 
           <td>
-            <div type="button" id="edit" routerLink="edit/{{ user.userId }}" >
+            <div type="button" class="edit" routerLink="edit/{{ user.userId }}" >
              <i class="fas fa-edit"></i>
             </div>
          </td>
   <td>
-         <div id="delete" *ngIf="user.userId" (click)="deleteUser(user.userId)">
+         <div class="delete" *ngIf="user.userId" (click)="deleteUser(user.userId)">
            <i class="fa-solid fa-trash"></i>
          </div>
          </td>

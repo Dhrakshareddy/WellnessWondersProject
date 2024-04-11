@@ -23,7 +23,7 @@
  
 }
 
-#con {
+.con {
   position: absolute;
   left: 0; /* Adjusted left position or you can remove it */
   top: 140px;
@@ -33,19 +33,6 @@
 
 .col-md-1 {
   margin-left: 420px;
-}
-
-#add {
-  background-color: orange;
-  font-size: 40px;
-  width: 60px;
-  border-radius: 5px;
-  color:white;
-  position: absolute;
-  left: 900px;
-  top: -30px;
-  border: 5px solid black;
-  padding-top: 5px;
 }
 
 table {
@@ -62,12 +49,12 @@ h1 {
   left: 30px;
   top: -20px;
 }
-#add{
+.add{
   background-color:rgb(15, 145, 15);
   font-size: 36px;
   width: 50px;
   border-radius: 7px;
-color: white;
+  color: white;
   position: absolute;
   left: 950px;
   top: -10px;
@@ -77,11 +64,11 @@ color: white;
   border-style: none;
   box-shadow: 4px 4px 10px black;
 }
-#delete{
+.delete{
   color: red;
   font-size: 20px;
 }
-#edit{
+.edit{
   color: blueviolet;
   font-size: 20px;
 }

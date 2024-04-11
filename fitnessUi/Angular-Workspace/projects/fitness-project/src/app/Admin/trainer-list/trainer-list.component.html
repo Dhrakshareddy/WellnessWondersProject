@@ -1,11 +1,11 @@
-<div id="con">
+<div class="con">
   <div class="container mt-2">
     <div class="row p-4 text-end ">
       <div class=" d-flex justify-content-end ">
         <h1>Trainer List</h1>
 
         <div class="col-md-1  ">
-          <button id="add" class="btn btn-primary float-lg-end" routerLink="add">
+          <button class="add" routerLink="add">
             +
           </button>
 
@@ -36,12 +36,12 @@
 
 
             <td>
-              <div type="button" id="edit" routerLink="edit/{{ trainer.trainerId }}">
+              <div type="button" class="edit" routerLink="edit/{{ trainer.trainerId }}">
                 <i class="fas fa-edit"></i>
               </div>
             </td>
             <td>
-              <div id="delete" *ngIf="trainer.trainerId" (click)="deleteTrainer(trainer.trainerId)"><i
+              <div class="delete" *ngIf="trainer.trainerId" (click)="deleteTrainer(trainer.trainerId)"><i
                   class="fa-solid fa-trash"></i>
 
               </div>

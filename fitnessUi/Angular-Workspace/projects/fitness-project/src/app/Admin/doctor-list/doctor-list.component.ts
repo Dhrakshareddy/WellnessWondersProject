@@ -23,9 +23,6 @@ export class DoctorListComponent implements OnInit {
       this.doctors = doctors;
     });
   }
-
-
-
   deleteDoctor(id: number): void {
     this.doctorService.deleteDoctor(id).subscribe((res) => {
 

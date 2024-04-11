@@ -19,37 +19,21 @@
 
 .table-dark tr th {
   text-align: center;
- 
- 
 }
 
-#con {
+.con {
   position: absolute;
-  left: 0;
+  left: 0; /* Adjusted left position or you can remove it */
   top: 140px;
   margin-left: 200px;
- 
 }
 
 .col-md-1 {
   margin-left: 420px;
 }
 
-#add {
-  background-color: orange;
-  font-size: 40px;
-  width: 60px;
-  border-radius: 5px;
-  color: black;
-  position: absolute;
-  left: 900px;
-  top: -30px;
-  border: 5px solid black;
-  padding-top: 5px;
-}
-
 table {
-  max-width: 100%;
+  max-width: 100%; /* Set max-width to ensure it doesn't exceed the container */
 }
 
 thead {
@@ -62,27 +46,25 @@ h1 {
   left: 30px;
   top: -20px;
 }
-#add{
+.add{
   background-color:rgb(15, 145, 15);
   font-size: 36px;
   width: 50px;
   border-radius: 7px;
-color: white;
+  color: white;
   position: absolute;
   left: 950px;
   top: -10px;
- 
   padding-top: 2px;
   height: 50px;
   border-style: none;
   box-shadow: 4px 4px 10px black;
 }
-#delete{
+.delete{
   color: red;
   font-size: 20px;
 }
-#edit{
+.edit{
   color: blueviolet;
   font-size: 20px;
 }
-
